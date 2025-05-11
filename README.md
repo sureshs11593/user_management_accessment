@@ -21,29 +21,27 @@ This is a minimal user management system built with Django (admin, ORM) and Fast
 ## Setup Instructions
 
 ### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
+git clone https://sureshs11593/user_management_accessment.git;
 cd user_mgmt_project
 
 ### 2. setup virtual environment and installing required module
-python -m venv venv
-venv\Scripts\activate  # Windows
-pip install -r requirements.txt
+python -m venv venv;
+venv\Scripts\activate;
+pip install -r requirements.txt;
 
 ### 3. Apply Migrations
-python manage.py makemigrations
-python manage.py migrate
+python manage.py makemigrations;
+python manage.py migrate;
 
 ### 4. Create SuperUser/admin [Optional]
-python manage.py createsuperuser
+python manage.py createsuperuser;
 
 ### 5. Populate dummy users
-python manage.py populate_users
+python manage.py populate_users;
 
 ### 6.  Run Django Admin
-python manage.py runserver --> you can visit /admin to verify admin access
+python manage.py runserver; **--> you can visit /admin to verify admin access**
 
 ### 7. Run Fast API app
-uvicorn fastapi_app.main:app --reload --> can be accessed using /docs
+uvicorn fastapi_app.main:app --reload; **--> can be accessed using /docs**
 
